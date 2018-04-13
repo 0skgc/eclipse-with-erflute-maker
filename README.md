@@ -2,7 +2,7 @@
 
 ## このスクリプトは以下のことを実行します
 
-1. eclipse-oxygen(JavaEE)をダウンロード
+1. eclipse-oxygen(Java)をダウンロード
 2. ERFluteプラグインのjarをダウンロード
 3. eclipseのdmgパッケージを展開し、ERFluteプラグインおよびそれが稼働するために必要なプラグインをインストール
 
