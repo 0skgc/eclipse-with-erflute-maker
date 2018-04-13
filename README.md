@@ -8,7 +8,7 @@
 
 ## 展開されたeclipseを実行する方法
 
-open ./target/Eclipse.app
+open Eclipse.app
 
 ## see also
 * http://dbflute.seasar.org/ja/manual/function/helper/erflute/index.html
