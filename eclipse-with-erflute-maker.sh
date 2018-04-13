@@ -2,7 +2,7 @@
 TARGET=./target
 ERFLUTE_JAR="org.dbflute.erflute_0.5.7.jar"
 ERFLUTE="http://dbflute.seasar.org/download/misc/helper/erflute/$ERFLUTE_JAR"
-ECLIPSE_DMG="http://ftp.jaist.ac.jp/pub/eclipse/technology/epp/downloads/release/oxygen/1a/eclipse-jee-oxygen-1a-macosx-cocoa-x86_64.dmg"
+ECLIPSE_DMG="http://ftp.jaist.ac.jp/pub/eclipse/technology/epp/downloads/release/oxygen/3a/eclipse-java-oxygen-3a-macosx-cocoa-x86_64.dmg"
 
 # clear
 rm -fr $TARGET
@@ -26,8 +26,8 @@ ECLIPSE_HOME=$TARGET/Eclipse.app
 ECLIPSE_INI=$ECLIPSE_HOME/Contents/Eclipse/eclipse.ini
 cp $ECLIPSE_INI $TMPDIR/_eclipse.ini
 cat $TMPDIR/_eclipse.ini \
-  | sed -e 's/-Xms256m/-Xms1g/g' \
-  | sed -e 's/-Xmx1024m/-Xmx3g/g' \
+  | sed -e 's/-Xms256m/-Xms512m/g' \
+  | sed -e 's/-Xmx1024m/-Xmx2048m/g' \
   > $ECLIPSE_INI
 
 # install Eclipse 2.0 style plugin support
